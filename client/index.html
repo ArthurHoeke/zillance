@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metatags -->
+    <meta charset="UTF-8">
+    <title>zillance</title>
+    <meta name="theme-color" content="#E0AE46">
+
+    <!-- SEO related -->
+    <meta name="description" content="edit description">
+    <meta name="keywords" content="zilliqa, dapp">
+    <meta name="author" content="Zillacracy">
+
+    <!-- open graph -->
+    <meta property="og:title" content="zillance.com">
+    <meta property="og:description" content="description">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zillance.com/">
+    <meta property="og:image" content="logo_link">
+    <meta property="og:image:width" content="400">
+    <meta property="og:iamge:height" content="400">
+
+    <!-- browser capable -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="robots" content="all">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ms -->
+    <meta name="application-name" content="zillance"/>
+    <meta name="msapplication-TileColor" content="#E0AE46" />
+    <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png" />
+
+    <!-- icons -->
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="shortcut icon" type="img/x-icon" href="favicon.ico" />
+
+    <!-- css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <link rel="stylesheet" href="css/stylesheet.css?v=1">
+    <link rel="stylesheet" href="css/notyf.css">
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="js/notyf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="js/tags.js"></script>
+    <script src="js/main.js?v=3"></script>
+</head>
+<body>
+    <nav id="nav">
+        <div id="logo">
+            <img src="img/icons/logo.svg">
+        </div>
+        <div id="activeBackdrop"></div>
+        <ul>
+            <li id="active">
+                <div><img src="img/icons/all.svg"></div>
+                all projects
+            </li>
+            <li>
+                <div><img src="img/icons/finance.svg"></div>
+                finance
+            </li>
+            <li>
+                <div><img src="img/icons/games.svg"></div>
+                games
+            </li>
+            <li>
+                <div><img src="img/icons/nft.svg"></div>
+                NFT
+            </li>
+            <li>
+                <div><img src="img/icons/misc.svg"></div>
+                misc
+            </li>
+        </ul>
+    </nav>
+    <div id="mobileNavPopup">
+        <img id="mobileNavIcon" src="img/icons/menu.svg">
+    </div>
+    <main id="projectList">
+        <div id="createProject">
+            <p id="openProjectForm">CREATE <img src="img/icons/open.svg"> PROJECT</p>
+            <form id="projectForm" hidden>
+                <section>
+                    <div>
+                        <img src="img/icons/pen.svg">
+                        <input placeholder="project title *" id="formTitle" required>
+                    </div>
+                    <div>
+                        <img src="img/icons/category.svg" id="catIcon">
+                        <select id="category" required>
+                            <option value="">Select category</option>
+                            <option value="finance">finance</option>
+                            <option value="games">games</option>
+                            <option value="nft">nft</option>
+                            <option value="mis">misc</option>
+                        </select>
+                    </div>
+                </section>
+                <section id="descriptionSection">
+                    <img src="img/icons/description.svg">
+                    <textarea placeholder="description *" id="formFullDescription" required></textarea>
+                </section>
+                <section id="tags">
+                    <input type="text" id="exist-values" class="tagged form-control" data-removeBtn="true" name="tag-2" value="scilla, web-design" placeholder="press ENTER to add tag">
+                    <div id="offer">
+                        <img src="img/icons/zil_offer.svg">
+                        <input type="number" id="formPrice" placeholder="offer *">
+                    </div>
+                </section>
+                <div id="submitForm">
+                    PUBLISH
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
