@@ -1,6 +1,6 @@
 <p align="center">
   <h3 align="center">zillance</h3>
-
+  <img src="https://cdn.dribbble.com/users/2397354/screenshots/15396975/media/b3295cd411819a4c0ba259786ced6b6c.png" alt="preview">
   <p align="center">
     Zillance is an open-source freelance platform aimed at the Zilliqa blockchain.
   </p>
